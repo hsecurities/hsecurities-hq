@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="16" y1="16" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0066FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)"/>
+  <rect width="62" height="62" x="1" y="1" rx="15" stroke="#334155" stroke-width="1.5"/>
+  <circle cx="54" cy="10" r="3" fill="#0066FF"/>
+  
+  <!-- Icon Graphics -->
+  <g transform="translate(12, 12)">
+    
+    <!-- Server blades with LED indicators and data lock -->
+    <rect x="6" y="4" width="28" height="8" rx="2" stroke="url(#accentGrad)" stroke-width="1.5" fill="#0B1220"/>
+    <rect x="6" y="16" width="28" height="8" rx="2" stroke="url(#accentGrad)" stroke-width="1.5" fill="#0B1220"/>
+    <rect x="6" y="28" width="28" height="8" rx="2" stroke="url(#accentGrad)" stroke-width="1.5" fill="#0B1220"/>
+    <circle cx="11" cy="8" r="1.5" fill="#38BDF8"/>
+    <circle cx="16" cy="8" r="1.5" fill="#38BDF8"/>
+    <circle cx="11" cy="20" r="1.5" fill="#38BDF8"/>
+    <circle cx="16" cy="20" r="1.5" fill="#38BDF8"/>
+    <circle cx="11" cy="32" r="1.5" fill="#38BDF8"/>
+    <circle cx="16" cy="32" r="1.5" fill="#38BDF8"/>
+    <line x1="24" y1="8" x2="30" y2="8" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="24" y1="20" x2="30" y2="20" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="24" y1="32" x2="30" y2="32" stroke="#FFFFFF" stroke-width="1.5"/>
+  
+  </g>
+</svg>

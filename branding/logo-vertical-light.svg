@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 340" fill="none">
+  <defs>
+    <linearGradient id="vlShieldGrad" x1="160" y1="20" x2="160" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="320" height="340" rx="20" fill="#FFFFFF"/>
+  <rect width="318" height="338" x="1" y="1" rx="19" stroke="#E2E8F0" stroke-width="1.5" fill="none"/>
+
+  <g transform="translate(110, 30)">
+    <path d="M50 8 L88 24 V58 C88 84 50 102 50 102 C50 102 12 84 12 58 V24 Z" 
+          stroke="url(#vlShieldGrad)" stroke-width="3.5" fill="#F8FAFC"/>
+    <path d="M50 16 L80 28 V56 C80 76 50 92 50 92 C50 92 20 76 20 56 V28 Z" 
+          stroke="#0066FF" stroke-width="1.5" stroke-dasharray="4 2" fill="none" opacity="0.6"/>
+
+    <ellipse cx="50" cy="52" rx="24" ry="24" stroke="#0066FF" stroke-width="1.2" opacity="0.25"/>
+    <ellipse cx="50" cy="52" rx="12" ry="24" stroke="#0066FF" stroke-width="1.2" opacity="0.5"/>
+    <path d="M26 52 H74 M31 40 H69 M31 64 H69" stroke="#0066FF" stroke-width="1.2" opacity="0.35"/>
+
+    <path d="M42 38 V66 M42 50 C42 44 58 44 58 50 V66" 
+          stroke="#0B1220" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="50" cy="33" r="3.5" fill="#0066FF"/>
+  </g>
+
+  <text x="160" y="195" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="28" fill="#0B1220">
+    <tspan fill="#0066FF">h</tspan>SECURITIES <tspan fill="#0066FF">HQ</tspan>
+  </text>
+
+  <text x="160" y="222" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="10.5" letter-spacing="3" fill="#64748B">
+    STRATEGY. SECURITY. SOLUTIONS.
+  </text>
+
+  <text x="160" y="250" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="12" fill="#0066FF">
+    CYBER TRAINING CAMPUS
+  </text>
+
+  <g transform="translate(100, 275)">
+    <rect width="120" height="26" rx="13" fill="#EFF6FF" stroke="#0066FF" stroke-width="1"/>
+    <circle cx="16" cy="13" r="4" fill="#0066FF"/>
+    <text x="28" y="17" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="10" fill="#0066FF" letter-spacing="1">ENTER CAMPUS</text>
+  </g>
+</svg>

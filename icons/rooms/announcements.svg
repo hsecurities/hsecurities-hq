@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="16" y1="16" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0066FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)"/>
+  <rect width="62" height="62" x="1" y="1" rx="15" stroke="#334155" stroke-width="1.5"/>
+  <circle cx="54" cy="10" r="3" fill="#0066FF"/>
+  
+  <!-- Icon Graphics -->
+  <g transform="translate(12, 12)">
+    
+    <!-- Megaphone / Broadcast Horn with sound waves -->
+    <path d="M6 16 H12 L24 8 V30 L12 22 H6 Z" fill="url(#accentGrad)"/>
+    <path d="M10 22 V28 H14 V22" fill="#38BDF8"/>
+    <path d="M28 14 C30 16 30 22 28 24" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <path d="M32 10 C36 14 36 24 32 28" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+  
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500" fill="none">
+  <rect width="1500" height="500" fill="#0B1220"/>
+  <circle cx="750" cy="250" r="400" fill="#0066FF" opacity="0.12"/>
+  <g transform="translate(120, 160)">
+    <text x="0" y="70" font-family="'Inter', system-ui, sans-serif" font-weight="900" font-size="68" fill="#FFFFFF">
+      <tspan fill="#38BDF8">h</tspan>SECURITIES <tspan fill="#0066FF">HQ</tspan>
+    </text>
+    <text x="4" y="125" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="22" fill="#38BDF8" letter-spacing="4">
+      STRATEGY. SECURITY. SOLUTIONS.
+    </text>
+    <text x="4" y="170" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="18" fill="#94A3B8">
+      Explore the Virtual Cybersecurity Campus at office.hsecurities.in
+    </text>
+  </g>
+</svg>

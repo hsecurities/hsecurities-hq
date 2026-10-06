@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396" fill="none">
+  <defs>
+    <linearGradient id="liBg" x1="0" y1="0" x2="1584" y2="396" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="1584" height="396" fill="url(#liBg)"/>
+  <path d="M0 100 H1584 M0 200 H1584 M0 300 H1584" stroke="#334155" stroke-width="0.8" opacity="0.4"/>
+  <path d="M300 0 V396 M700 0 V396 M1100 0 V396" stroke="#334155" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Branding Left -->
+  <g transform="translate(100, 110)">
+    <text x="0" y="70" font-family="'Inter', system-ui, sans-serif" font-weight="900" font-size="62" fill="#FFFFFF">
+      <tspan fill="#38BDF8">h</tspan>SECURITIES <tspan fill="#0066FF">HQ</tspan>
+    </text>
+    <text x="4" y="115" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="20" fill="#38BDF8" letter-spacing="5">
+      STRATEGY. SECURITY. SOLUTIONS.
+    </text>
+    <text x="4" y="155" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="16" fill="#94A3B8">
+      Virtual Cyber School • CTF Arena • Executive War Room • office.hsecurities.in
+    </text>
+  </g>
+
+  <!-- Right Graphic -->
+  <g transform="translate(1220, 60)">
+    <circle cx="140" cy="140" r="120" stroke="#0066FF" stroke-width="2" opacity="0.5"/>
+    <circle cx="140" cy="140" r="80" stroke="#38BDF8" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+    <circle cx="140" cy="140" r="40" fill="#0066FF" opacity="0.2"/>
+    <text x="140" y="148" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF">SOC</text>
+  </g>
+</svg>

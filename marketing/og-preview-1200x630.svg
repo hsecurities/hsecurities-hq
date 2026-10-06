@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <radialGradient id="ogGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0066FF" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#0B1220" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </radialGradient>
+    <linearGradient id="ogBorder" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0B1220"/>
+  <rect width="1200" height="630" fill="url(#ogGlow)"/>
+
+  <!-- Cyber Grid Lines -->
+  <path d="M0 120 H1200 M0 240 H1200 M0 360 H1200 M0 480 H1200" stroke="#1E293B" stroke-width="1" stroke-opacity="0.6"/>
+  <path d="M200 0 V630 M400 0 V630 M600 0 V630 M800 0 V630 M1000 0 V630" stroke="#1E293B" stroke-width="1" stroke-opacity="0.6"/>
+
+  <!-- Outer Frame -->
+  <rect x="24" y="24" width="1152" height="582" rx="20" stroke="url(#ogBorder)" stroke-width="2" fill="none"/>
+
+  <!-- Left: Shield Emblem -->
+  <g transform="translate(100, 160)">
+    <path d="M120 20 L210 60 V140 C210 200 120 250 120 250 C120 250 30 200 30 140 V60 Z" 
+          stroke="#0066FF" stroke-width="8" fill="#0B1220"/>
+    <ellipse cx="120" cy="130" rx="55" ry="55" stroke="#38BDF8" stroke-width="3" opacity="0.4"/>
+    <ellipse cx="120" cy="130" rx="28" ry="55" stroke="#38BDF8" stroke-width="3" opacity="0.7"/>
+    <path d="M65 130 H175 M75 100 H165 M75 160 H165" stroke="#38BDF8" stroke-width="3" opacity="0.5"/>
+    <path d="M100 100 V165 M100 130 C100 115 140 115 140 130 V165" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="120" cy="85" r="8" fill="#38BDF8"/>
+  </g>
+
+  <!-- Right: Titles & Copy -->
+  <g transform="translate(380, 180)">
+    <!-- Badge -->
+    <rect width="280" height="36" rx="18" fill="#1E293B" stroke="#0066FF" stroke-width="1.5"/>
+    <circle cx="18" cy="18" r="5" fill="#38BDF8"/>
+    <text x="32" y="23" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="13" fill="#38BDF8" letter-spacing="1">NEXT-GEN VIRTUAL CAMPUS</text>
+
+    <!-- Main Title -->
+    <text x="0" y="95" font-family="'Inter', system-ui, sans-serif" font-weight="900" font-size="64" letter-spacing="-1.5" fill="#FFFFFF">
+      <tspan fill="#38BDF8">h</tspan>SECURITIES <tspan fill="#0066FF">HQ</tspan>
+    </text>
+
+    <text x="2" y="145" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="24" fill="#38BDF8" letter-spacing="4">
+      STRATEGY. SECURITY. SOLUTIONS.
+    </text>
+
+    <text x="2" y="195" font-family="'Inter', system-ui, sans-serif" font-weight="400" font-size="18" fill="#94A3B8">
+      Self-Hosted Virtual Cyber School &amp; Training Campus with Real-Time Multiplayer,
+    </text>
+    <text x="2" y="225" font-family="'Inter', system-ui, sans-serif" font-weight="400" font-size="18" fill="#94A3B8">
+      Spatial Voice/Video, CTF Cyber Range, and 10 Interactive Specialized Wings.
+    </text>
+
+    <!-- Domain Pill -->
+    <g transform="translate(0, 265)">
+      <rect width="260" height="44" rx="22" fill="#0066FF"/>
+      <text x="130" y="27" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">
+        office.hsecurities.in
+      </text>
+    </g>
+  </g>
+</svg>

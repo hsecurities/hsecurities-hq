@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" fill="none">
+  <defs>
+    <linearGradient id="shieldGradLight" x1="20" y1="10" x2="100" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="540" height="120" rx="16" fill="#FFFFFF"/>
+  <rect width="538" height="118" x="1" y="1" rx="15" stroke="#E2E8F0" stroke-width="1.5" fill="none"/>
+  
+  <g transform="translate(18, 10)">
+    <path d="M50 8 L86 22 V54 C86 78 50 94 50 94 C50 94 14 78 14 54 V22 Z" 
+          stroke="url(#shieldGradLight)" stroke-width="3" fill="#F8FAFC"/>
+    
+    <path d="M50 14 L80 26 V52 C80 72 50 86 50 86 C50 86 20 72 20 52 V26 Z" 
+          stroke="#0066FF" stroke-width="1.5" stroke-dasharray="4 2" fill="none" opacity="0.6"/>
+
+    <ellipse cx="50" cy="48" rx="22" ry="22" stroke="#0066FF" stroke-width="1.2" opacity="0.25"/>
+    <ellipse cx="50" cy="48" rx="11" ry="22" stroke="#0066FF" stroke-width="1.2" opacity="0.5"/>
+    <path d="M28 48 H72 M33 37 H67 M33 59 H67" stroke="#0066FF" stroke-width="1.2" opacity="0.35"/>
+
+    <path d="M42 34 V62 M42 46 C42 40 58 40 58 46 V62" 
+          stroke="#0B1220" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="50" cy="30" r="3" fill="#0066FF"/>
+  </g>
+
+  <g transform="translate(132, 28)">
+    <text x="0" y="38" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-weight="800" font-size="34" letter-spacing="-0.5" fill="#0B1220">
+      <tspan fill="#0066FF">h</tspan>SECURITIES <tspan fill="#0066FF">HQ</tspan>
+    </text>
+
+    <text x="2" y="62" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="11.5" letter-spacing="3.5" fill="#64748B">
+      STRATEGY. SECURITY. SOLUTIONS.
+    </text>
+  </g>
+
+  <g transform="translate(450, 48)">
+    <rect width="68" height="24" rx="12" fill="#EFF6FF" stroke="#0066FF" stroke-width="1"/>
+    <circle cx="12" cy="12" r="3.5" fill="#0066FF"/>
+    <text x="22" y="15.5" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="9" fill="#0066FF" letter-spacing="0.5">SECURE</text>
+  </g>
+</svg>

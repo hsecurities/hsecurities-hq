@@ -1,0 +1,89 @@
+version: '3.8'
+
+services:
+  # 1. PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: hsec_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-hsec_admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-CyberCampus2026!}
+      POSTGRES_DB: ${POSTGRES_DB:-hsecurities_hq}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../database/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+      - ../database/seeds.sql:/docker-entrypoint-initdb.d/02_seeds.sql:ro
+    ports:
+      - "127.0.0.1:5432:5432"
+    networks:
+      - hsec_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-hsec_admin} -d ${POSTGRES_DB:-hsecurities_hq}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. Node.js Backend & Realtime Socket.IO Server
+  server:
+    build:
+      context: ../server
+      dockerfile: ../docker/Dockerfile.server
+    container_name: hsec_server
+    restart: always
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      DATABASE_URL: postgresql://${POSTGRES_USER:-hsec_admin}:${POSTGRES_PASSWORD:-CyberCampus2026!}@postgres:5432/${POSTGRES_DB:-hsecurities_hq}
+      JWT_SECRET: ${JWT_SECRET:-hSecCyberSchoolSuperSecretKey2026!}
+      CLIENT_URL: https://office.hsecurities.in
+    ports:
+      - "127.0.0.1:4000:4000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - hsec_network
+
+  # 3. Next.js Frontend App
+  client:
+    build:
+      context: ../client
+      dockerfile: ../docker/Dockerfile.client
+      args:
+        NEXT_PUBLIC_API_URL: https://office.hsecurities.in/api
+        NEXT_PUBLIC_SOCKET_URL: https://office.hsecurities.in
+    container_name: hsec_client
+    restart: always
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      - server
+    networks:
+      - hsec_network
+
+  # 4. Nginx Reverse Proxy with SSL Termination & WebSocket Upgrades
+  nginx:
+    image: nginx:alpine
+    container_name: hsec_nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/office.hsecurities.in.conf:/etc/nginx/conf.d/default.conf:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      - certbot_www:/var/www/certbot:ro
+    depends_on:
+      - client
+      - server
+    networks:
+      - hsec_network
+
+volumes:
+  postgres_data:
+  certbot_www:
+
+networks:
+  hsec_network:
+    driver: bridge
