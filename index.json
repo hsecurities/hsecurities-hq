@@ -1,0 +1,63 @@
+{
+  "mapUrl": "hq.tmj",
+  "name": "hSECURITIES HQ",
+  "description": "Modern Cybersecurity Campus and Training Institute",
+  "group": "hSECURITIES",
+  "thumbnail": "hq.png",
+  "startCoordinates": {
+    "x": 1600,
+    "y": 2016
+  },
+  "rooms": [
+    {
+      "name": "Reception Area",
+      "description": "Campus Welcome Center, Directory Kiosk, and Security Checkpoint",
+      "coordinates": { "x": 1600, "y": 2016 }
+    },
+    {
+      "name": "Training Hall",
+      "description": "Cyber Defense Academy & Hands-on Student Lab Workstations",
+      "coordinates": { "x": 640, "y": 1472 }
+    },
+    {
+      "name": "Webinar Auditorium",
+      "description": "Keynote Lecture Amphitheater with Live Webinar Stream & Speaker Megaphone",
+      "coordinates": { "x": 640, "y": 640 }
+    },
+    {
+      "name": "Conference Room",
+      "description": "Executive Boardroom with Jitsi Telepresence Video Suite",
+      "coordinates": { "x": 1600, "y": 704 }
+    },
+    {
+      "name": "CTF Arena",
+      "description": "Capture The Flag Cyber Range: Red Team vs Blue Team with Live Scoreboard",
+      "coordinates": { "x": 2560, "y": 640 }
+    },
+    {
+      "name": "Networking Lounge",
+      "description": "Cyber Cafe, Refreshments & Soundproof Private Audio Discussion Alcoves",
+      "coordinates": { "x": 2560, "y": 1472 }
+    },
+    {
+      "name": "Staff Office",
+      "description": "Faculty, Instructor Workstations, and Consultation Desks",
+      "coordinates": { "x": 640, "y": 2048 }
+    },
+    {
+      "name": "Meeting Rooms",
+      "description": "Breakout Pods for Threat Intel and Incident Response collaboration",
+      "coordinates": { "x": 1600, "y": 1088 }
+    },
+    {
+      "name": "Career & Placement Center",
+      "description": "Recruitment Board, Career Counseling & 1-on-1 Interview Suites",
+      "coordinates": { "x": 2560, "y": 2048 }
+    },
+    {
+      "name": "Server Room & SOC Vault",
+      "description": "High-Security Data Center and Security Operations Center SIEM Console",
+      "coordinates": { "x": 1600, "y": 320 }
+    }
+  ]
+}
